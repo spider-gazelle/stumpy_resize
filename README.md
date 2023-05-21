@@ -18,10 +18,16 @@ Image resize algorithms in pure crystal
 
 ```crystal
 require "stumpy_resize"
+
+# read
+canvas = StumpyPNG.read("./path/image.png")
+
+# resize
+resized_canvas = StumpyResize.resize(canvas, 320, 320)
+
+# write
+StumpyPNG.write(resized_canvas, "./path/resized.png")
 ```
-
-TODO: Write usage instructions here
-
 
 ## Contributing
 
