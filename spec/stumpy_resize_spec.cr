@@ -1,7 +1,7 @@
 require "./spec_helper"
 
 describe StumpyResize do
-  canvas = StumpyPNG.read(File.open("./spec/test_image.png"))
+  canvas = StumpyPNG.read("./spec/test_image.png")
 
   it "resizes using NearestNeighbor" do
     resized = StumpyResize.resize(canvas, 320, 200, :nearest_neighbor)
