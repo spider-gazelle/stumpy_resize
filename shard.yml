@@ -1,0 +1,22 @@
+name: stumpy_resize
+version: 1.0.0
+
+dependencies:
+  stumpy_core:
+    github: stumpycr/stumpy_core
+
+development_dependencies:
+  ameba:
+    github: veelenga/ameba
+
+  # used for specs
+  stumpy_png:
+    github: stumpycr/stumpy_png
+    branch: master
+
+authors:
+  - Stephen von Takach <steve@place.tech>
+
+crystal: 1.8.2
+
+license: MIT
