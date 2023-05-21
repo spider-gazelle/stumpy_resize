@@ -25,6 +25,9 @@ canvas = StumpyPNG.read("./path/image.png")
 # resize
 resized_canvas = StumpyResize.resize(canvas, 320, 320)
 
+# blur it
+burred_canvas = StumpyResize.blur(resized_canvas, 5)
+
 # write
 StumpyPNG.write(resized_canvas, "./path/resized.png")
 ```
