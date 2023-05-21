@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install dependencies
-      run: shards install --skip-postinstall --ignore-crystal-version -v
+      run: shards install --skip-postinstall --skip-executables --ignore-crystal-version -v
     - name: Format
       run: crystal tool format --check
     - name: Run tests
