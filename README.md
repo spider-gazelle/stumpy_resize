@@ -28,6 +28,12 @@ resized_canvas = StumpyResize.resize(canvas, 320, 320)
 # blur it
 burred_canvas = StumpyResize.blur(resized_canvas, 5)
 
+# scale to fit (letter / pillar boxing if required)
+fit_canvas = StumpyResize.scale_to_fit(resized_canvas, 320, 320)
+
+# scale to cover (cropping the edges if required)
+cover_canvas = StumpyResize.scale_to_cover(resized_canvas, 320, 320)
+
 # write
 StumpyPNG.write(resized_canvas, "./path/resized.png")
 ```

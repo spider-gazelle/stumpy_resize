@@ -15,7 +15,9 @@ module StumpyResize
   alias Canvas = StumpyCore::Canvas
   alias RGBA = StumpyCore::RGBA
 
-  def self.resize(image : Canvas, new_width : Int32, new_height : Int32, method : InterpolationMethod = InterpolationMethod::Lanczos) : Canvas
+  DEFAULT_INTERPOLATION_METHOD = InterpolationMethod::Lanczos
+
+  def self.resize(image : Canvas, new_width : Int32, new_height : Int32, method : InterpolationMethod = DEFAULT_INTERPOLATION_METHOD) : Canvas
     new_image = Canvas.new(new_width, new_height)
 
     case method

@@ -1,5 +1,5 @@
 name: stumpy_resize
-version: 1.1.0
+version: 1.2.0
 
 dependencies:
   stumpy_core:
