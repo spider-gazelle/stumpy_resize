@@ -16,7 +16,7 @@ module StumpyResize
     scaled_height = (canvas.height.to_f * scale).round.to_i
 
     # Resize the original canvas
-    resized = resize(canvas, scaled_width, scaled_height)
+    resized = resize(canvas, scaled_width, scaled_height, resize_method)
     return resized if scaled_width == desired_width && scaled_height == desired_height
 
     # Create the new canvas with the desired dimensions
